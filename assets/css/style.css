@@ -307,7 +307,9 @@ body {
   justify-content: center;
   padding: 40px;
   height: 550px;
-  background: linear-gradient(135deg, #2AA7B5 , #01539D);
+  background: url(/assets/images/image.png) center/cover no-repeat,
+  linear-gradient(135deg, #2AA7B5 , #01539D);
+  
   padding:30px 11% 50px 9%;
   color: rgb(0, 0, 0);
   margin: 20px 0;
@@ -357,13 +359,106 @@ body {
 
 
 
-@media screen and (max-width: 768px) {
-  .why-deecee {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  .why-deecee-img {
-      margin: 0 0 20px 0;
-  }
+.features-section {
+  text-align: center;
+  padding: 50px 9% 50px 9%;
+  
 }
+
+.features-section h2 {
+  font-size: 28px;
+  color: #01539D;
+  margin-bottom: 40px;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.feature-item-left,.feature-item-right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  width: 880px;
+  max-width: 900px;
+  transition: box-shadow 0.3s ease;
+  
+}
+
+.feature-item-left{
+  align-self: flex-start;
+}
+.feature-item-right{
+  align-self: flex-end;
+}
+
+.feature-item:hover {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-content {
+  text-align: left;
+  flex: 1;
+  padding-right: 20px;
+}
+
+.feature-content h4 {
+  font-size: 20px;
+  color: #01539D;
+  margin-bottom: 5px;
+  display: flex;
+  display: inline-block;
+}
+
+.feature-content p:first-of-type {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.feature-content p {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 0;
+}
+
+.feature-icon {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.connector-left {
+  width: 3px;
+  height: 50px;
+  align-self: flex-start;
+  margin-left: 170px;
+}
+.connector-right{
+  width: 3px;
+  height: 50px;
+  align-self: flex-end;
+  margin-right: 320px;
+}
+.connector-right img{
+  width: 154px;
+  height: 153px;
+}
+
+
+
+
